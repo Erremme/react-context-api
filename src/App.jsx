@@ -7,8 +7,11 @@ import Prodotti from "./page/Prodotti";
 import Prodotto from "./page/Prodotto";
 import ChiSiamo from "./page/ChiSiamo";
 
+import { AlertProvider } from "./context/AlertContext";
+
 export default function App(){
  return(
+  <AlertProvider>
   <BrowserRouter>
     <Routes>
       <Route element ={<DefaulLayout />}>
@@ -20,5 +23,6 @@ export default function App(){
       </Route>
     </Routes>
   </BrowserRouter>
+  </AlertProvider>
  )
 }

@@ -2,9 +2,20 @@ import MainNav from "../component/MainNav"
 import axios from "axios"
 import { useState, useEffect } from "react"
 import { Link, NavLink } from "react-router-dom"
+import { useAlertContext } from "../context/AlertContext"
+
 
 
 export default function Prodotti(){
+
+    const {setAlertData} = useAlertContext();
+    
+    useEffect(()=> {
+        setAlertData({
+            type : "info",
+            message:"Iscriviti alla nostra NewsLetter per restare aggiornato sulle ricette"
+        })
+    }, [])
 
 // stato del blog list che mi arriva dal BE
    const [blogList , setBlogList ] = useState([])
