@@ -1,4 +1,4 @@
-import MainNav from "../component/MainNav"
+
 import axios from "axios"
 import { useState, useEffect } from "react"
 import { Link, NavLink } from "react-router-dom"
@@ -15,7 +15,7 @@ export default function Prodotti(){
             type : "info",
             message:"Iscriviti alla nostra NewsLetter per restare aggiornato sulle ricette"
         })
-    }, [])
+    }, [setAlertData])
 
 // stato del blog list che mi arriva dal BE
    const [blogList , setBlogList ] = useState([])

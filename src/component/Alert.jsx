@@ -7,7 +7,8 @@ export default function Alert(){
 
     const classes ={
         info :"bg-amber-300 py-4  font-semibold",
-        success: "bg-green"
+        success: "bg-green",
+        danger : "bg-red-300 text-red-800  py-4  font-semibold"
     }
     
     const handleRemoveAlert = () =>{
