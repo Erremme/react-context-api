@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+
+.active{
+    color: gold;
+    border-bottom: 2px solid white;
+}
